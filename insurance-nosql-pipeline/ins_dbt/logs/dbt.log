@@ -1,0 +1,386 @@
+[0m16:53:45.446913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF370C8BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF375B6FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF366212B0>]}
+
+
+============================== 16:53:45.606834 | 4067946b-eecb-4ed3-9dda-fdbc7ee4e14a ==============================
+[0m16:53:45.606834 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:53:45.612839 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\My Courses\\Projects\\insurance-nosql-pipeline\\ins_dbt\\logs', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\IMAKA\\.dbt'}
+[0m16:54:17.516352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4067946b-eecb-4ed3-9dda-fdbc7ee4e14a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF370CA390>]}
+[0m16:54:17.756289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4067946b-eecb-4ed3-9dda-fdbc7ee4e14a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF402F64E0>]}
+[0m16:54:17.772313 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m16:54:20.560495 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m16:54:20.563497 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:54:20.565485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4067946b-eecb-4ed3-9dda-fdbc7ee4e14a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF3712B830>]}
+[0m16:54:31.104112 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ins_dbt.stg_claims' (models\stg_claims.sql) depends on a source named 'snowflake.CLAIMS' which was not found
+[0m16:54:31.107102 [debug] [MainThread]: Command `dbt run` failed at 16:54:31.107102 after 47.26 seconds
+[0m16:54:31.108100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF37CC1EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF3FC34680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AF42768560>]}
+[0m16:54:31.110101 [debug] [MainThread]: Flushing usage events
+[0m16:54:33.184275 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:57:10.529577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071CD515E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071CD05D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071C71EF00>]}
+
+
+============================== 16:57:10.540557 | 6be20179-94f9-445e-a226-58ee5ec0875f ==============================
+[0m16:57:10.540557 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:57:10.544561 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'D:\\My Courses\\Projects\\insurance-nosql-pipeline\\ins_dbt\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\IMAKA\\.dbt'}
+[0m16:57:14.925427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207247556D0>]}
+[0m16:57:15.149303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071C1BAF00>]}
+[0m16:57:15.152298 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m16:57:16.485287 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m16:57:16.492262 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:57:16.494263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020725221280>]}
+[0m16:57:20.838907 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ins_dbt.example
+[0m16:57:20.873541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002072782F2F0>]}
+[0m16:57:21.157200 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m16:57:21.187883 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m16:57:21.735748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207279C1C10>]}
+[0m16:57:21.736748 [info ] [MainThread]: Found 2 models, 1 source, 492 macros
+[0m16:57:21.738741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020727993A40>]}
+[0m16:57:21.743667 [info ] [MainThread]: 
+[0m16:57:21.745667 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:57:21.747670 [info ] [MainThread]: 
+[0m16:57:21.753535 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:57:21.767787 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE'
+[0m16:57:32.658039 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE"
+[0m16:57:32.660017 [debug] [ThreadPool]: On list_INSURANCE: show terse schemas in database INSURANCE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE"} */
+[0m16:57:32.661040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:43.950961 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 11.290 seconds
+[0m16:57:43.995077 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE_RAW'
+[0m16:57:44.162068 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE_RAW"
+[0m16:57:44.163042 [debug] [ThreadPool]: On list_INSURANCE_RAW: show objects in INSURANCE.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE_RAW"} */;
+[0m16:57:44.164048 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:57:46.051626 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.888 seconds
+[0m16:57:46.057451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020727805130>]}
+[0m16:57:46.192691 [debug] [Thread-1 (]: Began running node model.ins_dbt.stg_claims
+[0m16:57:46.194674 [info ] [Thread-1 (]: 1 of 2 START sql view model RAW.stg_claims ..................................... [RUN]
+[0m16:57:46.196665 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ins_dbt.stg_claims'
+[0m16:57:46.197666 [debug] [Thread-1 (]: Began compiling node model.ins_dbt.stg_claims
+[0m16:57:46.215176 [debug] [Thread-1 (]: Writing injected SQL for node "model.ins_dbt.stg_claims"
+[0m16:57:46.299787 [debug] [Thread-1 (]: Began executing node model.ins_dbt.stg_claims
+[0m16:57:46.368829 [debug] [Thread-1 (]: Writing runtime sql for node "model.ins_dbt.stg_claims"
+[0m16:57:46.376040 [debug] [Thread-1 (]: Using snowflake connection "model.ins_dbt.stg_claims"
+[0m16:57:46.377042 [debug] [Thread-1 (]: On model.ins_dbt.stg_claims: create or replace   view INSURANCE.RAW.stg_claims
+  
+  
+  
+  
+  as (
+    with raw as(
+    select
+        claim_id,
+        customer_id,
+        to_date(date) as claim_date,
+        amount::float as amount,
+        claim_type,
+        is_fraud:: boolean as is_fraud
+    frominsurance.raw.CLAIMS
+        
+)
+select * from raw
+  )
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "node_id": "model.ins_dbt.stg_claims"} */;
+[0m16:57:46.378041 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:57:48.648568 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bfd02f-0002-d867-0000-0003c453d09d
+[0m16:57:48.649595 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 4 unexpected 'frominsurance'.
+syntax error line 18 at position 0 unexpected 'select'.
+[0m16:57:48.724200 [debug] [Thread-1 (]: Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'frominsurance'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql
+[0m16:57:48.729422 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6be20179-94f9-445e-a226-58ee5ec0875f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020727842240>]}
+[0m16:57:48.731432 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model RAW.stg_claims ............................ [[31mERROR[0m in 2.53s]
+[0m16:57:48.734421 [debug] [Thread-1 (]: Finished running node model.ins_dbt.stg_claims
+[0m16:57:48.736448 [debug] [Thread-4 (]: Marking all children of 'model.ins_dbt.stg_claims' to be skipped because of status 'error'.  Reason: Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'frominsurance'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql.
+[0m16:57:48.739451 [debug] [Thread-1 (]: Began running node model.ins_dbt.claims_summary
+[0m16:57:48.741430 [info ] [Thread-1 (]: 2 of 2 SKIP relation RAW.claims_summary ........................................ [[33mSKIP[0m]
+[0m16:57:48.743448 [debug] [Thread-1 (]: Finished running node model.ins_dbt.claims_summary
+[0m16:57:48.745428 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:57:48.747424 [debug] [MainThread]: Connection 'list_INSURANCE' was left open.
+[0m16:57:48.748628 [debug] [MainThread]: On list_INSURANCE: Close
+[0m16:57:49.458233 [debug] [MainThread]: Connection 'list_INSURANCE_RAW' was left open.
+[0m16:57:49.459235 [debug] [MainThread]: On list_INSURANCE_RAW: Close
+[0m16:57:50.151390 [debug] [MainThread]: Connection 'model.ins_dbt.stg_claims' was left open.
+[0m16:57:50.152391 [debug] [MainThread]: On model.ins_dbt.stg_claims: Close
+[0m16:57:50.871283 [info ] [MainThread]: 
+[0m16:57:50.873290 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 29.12 seconds (29.12s).
+[0m16:57:50.876619 [debug] [MainThread]: Command end result
+[0m16:57:51.007491 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m16:57:51.012489 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m16:57:51.026490 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\run_results.json
+[0m16:57:51.027474 [info ] [MainThread]: 
+[0m16:57:51.028463 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:57:51.031466 [info ] [MainThread]: 
+[0m16:57:51.032463 [error] [MainThread]: [31mFailure in model stg_claims (models\stg_claims.sql)[0m
+[0m16:57:51.034465 [error] [MainThread]:   Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'frominsurance'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql
+[0m16:57:51.037464 [info ] [MainThread]: 
+[0m16:57:51.039470 [info ] [MainThread]:   compiled code at target\compiled\ins_dbt\models\stg_claims.sql
+[0m16:57:51.041952 [info ] [MainThread]: 
+[0m16:57:51.042939 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m16:57:51.046949 [debug] [MainThread]: Command `dbt run` failed at 16:57:51.045950 after 41.56 seconds
+[0m16:57:51.047949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071A74C860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071CC95B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002071CB5C740>]}
+[0m16:57:51.049140 [debug] [MainThread]: Flushing usage events
+[0m16:57:52.877582 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:00:44.952324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5F39FB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5CA71E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5FE82780>]}
+
+
+============================== 17:00:44.962509 | 6693ef1c-2a79-469b-add1-1063677945c5 ==============================
+[0m17:00:44.962509 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:00:44.964516 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'D:\\My Courses\\Projects\\insurance-nosql-pipeline\\ins_dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\IMAKA\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m17:00:47.572421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C695A5C40>]}
+[0m17:00:47.734088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C6026D310>]}
+[0m17:00:47.737091 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:00:48.602005 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:00:49.071405 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:00:49.073626 [debug] [MainThread]: Partial parsing: updated file: ins_dbt://models\source.yml
+[0m17:00:50.077776 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ins_dbt.example
+[0m17:00:50.102190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C6ACF0E90>]}
+[0m17:00:50.632348 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m17:00:50.638372 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m17:00:50.702639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C6ADC9370>]}
+[0m17:00:50.704731 [info ] [MainThread]: Found 2 models, 1 source, 492 macros
+[0m17:00:50.705867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C6AC13F50>]}
+[0m17:00:50.710845 [info ] [MainThread]: 
+[0m17:00:50.712843 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:00:50.713843 [info ] [MainThread]: 
+[0m17:00:50.715844 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:00:50.727903 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE'
+[0m17:00:50.908032 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE"
+[0m17:00:50.909033 [debug] [ThreadPool]: On list_INSURANCE: show terse schemas in database INSURANCE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE"} */
+[0m17:00:50.910032 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:00:54.529563 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.628 seconds
+[0m17:00:54.529563 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE_RAW'
+[0m17:00:54.580385 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE_RAW"
+[0m17:00:54.581386 [debug] [ThreadPool]: On list_INSURANCE_RAW: show objects in INSURANCE.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE_RAW"} */;
+[0m17:00:54.582371 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:00:56.515199 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.933 seconds
+[0m17:00:56.521200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C616EBB90>]}
+[0m17:00:56.529634 [debug] [Thread-1 (]: Began running node model.ins_dbt.stg_claims
+[0m17:00:56.530634 [info ] [Thread-1 (]: 1 of 2 START sql view model RAW.stg_claims ..................................... [RUN]
+[0m17:00:56.532634 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ins_dbt.stg_claims'
+[0m17:00:56.533663 [debug] [Thread-1 (]: Began compiling node model.ins_dbt.stg_claims
+[0m17:00:56.550839 [debug] [Thread-1 (]: Writing injected SQL for node "model.ins_dbt.stg_claims"
+[0m17:00:56.552841 [debug] [Thread-1 (]: Began executing node model.ins_dbt.stg_claims
+[0m17:00:56.627708 [debug] [Thread-1 (]: Writing runtime sql for node "model.ins_dbt.stg_claims"
+[0m17:00:56.631506 [debug] [Thread-1 (]: Using snowflake connection "model.ins_dbt.stg_claims"
+[0m17:00:56.632509 [debug] [Thread-1 (]: On model.ins_dbt.stg_claims: create or replace   view INSURANCE.RAW.stg_claims
+  
+  
+  
+  
+  as (
+    with raw as(
+    select
+        claim_id,
+        customer_id,
+        to_date(date) as claim_date,
+        amount::float as amount,
+        claim_type,
+        is_fraud:: boolean as is_fraud
+    fromINSURANCE.RAW.CLAIMS
+        
+)
+select * from raw
+  )
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "node_id": "model.ins_dbt.stg_claims"} */;
+[0m17:00:56.633504 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:00:58.379180 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bfd032-0002-d89d-0000-0003c453e0a1
+[0m17:00:58.380179 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 15 at position 4 unexpected 'fromINSURANCE'.
+syntax error line 18 at position 0 unexpected 'select'.
+[0m17:00:58.389179 [debug] [Thread-1 (]: Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'fromINSURANCE'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql
+[0m17:00:58.394070 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6693ef1c-2a79-469b-add1-1063677945c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C6AD71D90>]}
+[0m17:00:58.396092 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model RAW.stg_claims ............................ [[31mERROR[0m in 1.86s]
+[0m17:00:58.399092 [debug] [Thread-1 (]: Finished running node model.ins_dbt.stg_claims
+[0m17:00:58.400090 [debug] [Thread-4 (]: Marking all children of 'model.ins_dbt.stg_claims' to be skipped because of status 'error'.  Reason: Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'fromINSURANCE'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql.
+[0m17:00:58.404089 [debug] [Thread-1 (]: Began running node model.ins_dbt.claims_summary
+[0m17:00:58.406092 [info ] [Thread-1 (]: 2 of 2 SKIP relation RAW.claims_summary ........................................ [[33mSKIP[0m]
+[0m17:00:58.407100 [debug] [Thread-1 (]: Finished running node model.ins_dbt.claims_summary
+[0m17:00:58.410089 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:00:58.411115 [debug] [MainThread]: Connection 'list_INSURANCE' was left open.
+[0m17:00:58.412115 [debug] [MainThread]: On list_INSURANCE: Close
+[0m17:00:59.095361 [debug] [MainThread]: Connection 'list_INSURANCE_RAW' was left open.
+[0m17:00:59.096362 [debug] [MainThread]: On list_INSURANCE_RAW: Close
+[0m17:00:59.774973 [debug] [MainThread]: Connection 'model.ins_dbt.stg_claims' was left open.
+[0m17:00:59.775973 [debug] [MainThread]: On model.ins_dbt.stg_claims: Close
+[0m17:01:00.472467 [info ] [MainThread]: 
+[0m17:01:00.474614 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 9.76 seconds (9.76s).
+[0m17:01:00.477617 [debug] [MainThread]: Command end result
+[0m17:01:00.530780 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m17:01:00.536779 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m17:01:00.549777 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\run_results.json
+[0m17:01:00.550778 [info ] [MainThread]: 
+[0m17:01:00.552786 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:01:00.554793 [info ] [MainThread]: 
+[0m17:01:00.556777 [error] [MainThread]: [31mFailure in model stg_claims (models\stg_claims.sql)[0m
+[0m17:01:00.558775 [error] [MainThread]:   Database Error in model stg_claims (models\stg_claims.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 15 at position 4 unexpected 'fromINSURANCE'.
+  syntax error line 18 at position 0 unexpected 'select'.
+  compiled code at target\run\ins_dbt\models\stg_claims.sql
+[0m17:01:00.560783 [info ] [MainThread]: 
+[0m17:01:00.561785 [info ] [MainThread]:   compiled code at target\compiled\ins_dbt\models\stg_claims.sql
+[0m17:01:00.563784 [info ] [MainThread]: 
+[0m17:01:00.564794 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m17:01:00.568802 [debug] [MainThread]: Command `dbt run` failed at 17:01:00.568802 after 16.20 seconds
+[0m17:01:00.569801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5F28D5B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5FECB4A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C5FD4CBC0>]}
+[0m17:01:00.571780 [debug] [MainThread]: Flushing usage events
+[0m17:01:02.256738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:06.427870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8F31F800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8F31E1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8F31F7A0>]}
+
+
+============================== 17:06:06.532538 | 61e034d7-19b7-4132-925d-04d2bc17e774 ==============================
+[0m17:06:06.532538 [info ] [MainThread]: Running with dbt=1.10.13
+[0m17:06:06.540565 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'quiet': 'False', 'empty': 'False', 'log_path': 'D:\\My Courses\\Projects\\insurance-nosql-pipeline\\ins_dbt\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\IMAKA\\.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m17:06:28.523328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8ECDBDD0>]}
+[0m17:06:28.701149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F90C89D90>]}
+[0m17:06:28.709337 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m17:06:29.823675 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m17:06:31.451944 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:06:31.451944 [debug] [MainThread]: Partial parsing: updated file: ins_dbt://models\stg_claims.sql
+[0m17:06:32.184816 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ins_dbt.example
+[0m17:06:32.217272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9A44E360>]}
+[0m17:06:32.502269 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m17:06:32.541473 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m17:06:33.014359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9A200BC0>]}
+[0m17:06:33.022422 [info ] [MainThread]: Found 2 models, 1 source, 492 macros
+[0m17:06:33.022422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9A44F740>]}
+[0m17:06:33.038452 [info ] [MainThread]: 
+[0m17:06:33.038452 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:06:33.038452 [info ] [MainThread]: 
+[0m17:06:33.046451 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:06:33.062904 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE'
+[0m17:06:33.619275 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE"
+[0m17:06:33.619275 [debug] [ThreadPool]: On list_INSURANCE: show terse schemas in database INSURANCE
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE"} */
+[0m17:06:33.619275 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:38.386181 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 4.769 seconds
+[0m17:06:38.401642 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INSURANCE_RAW'
+[0m17:06:38.450832 [debug] [ThreadPool]: Using snowflake connection "list_INSURANCE_RAW"
+[0m17:06:38.450832 [debug] [ThreadPool]: On list_INSURANCE_RAW: show objects in INSURANCE.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "connection_name": "list_INSURANCE_RAW"} */;
+[0m17:06:38.450832 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:06:40.280418 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.827 seconds
+[0m17:06:40.288469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9AAA8D40>]}
+[0m17:06:40.382068 [debug] [Thread-1 (]: Began running node model.ins_dbt.stg_claims
+[0m17:06:40.382068 [info ] [Thread-1 (]: 1 of 2 START sql view model RAW.stg_claims ..................................... [RUN]
+[0m17:06:40.390084 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.ins_dbt.stg_claims'
+[0m17:06:40.390084 [debug] [Thread-1 (]: Began compiling node model.ins_dbt.stg_claims
+[0m17:06:40.423398 [debug] [Thread-1 (]: Writing injected SQL for node "model.ins_dbt.stg_claims"
+[0m17:06:40.431891 [debug] [Thread-1 (]: Began executing node model.ins_dbt.stg_claims
+[0m17:06:40.504952 [debug] [Thread-1 (]: Writing runtime sql for node "model.ins_dbt.stg_claims"
+[0m17:06:40.504952 [debug] [Thread-1 (]: Using snowflake connection "model.ins_dbt.stg_claims"
+[0m17:06:40.504952 [debug] [Thread-1 (]: On model.ins_dbt.stg_claims: create or replace   view INSURANCE.RAW.stg_claims
+  
+  
+  
+  
+  as (
+    with raw as(
+    select
+        claim_id,
+        customer_id,
+        to_date(date) as claim_date,
+        amount::float as amount,
+        claim_type,
+        is_fraud:: boolean as is_fraud
+    from INSURANCE.RAW.CLAIMS
+        
+)
+select * from raw
+  )
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "node_id": "model.ins_dbt.stg_claims"} */;
+[0m17:06:40.504952 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:06:42.917103 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.409 seconds
+[0m17:06:42.996270 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8CA53950>]}
+[0m17:06:43.004575 [info ] [Thread-1 (]: 1 of 2 OK created sql view model RAW.stg_claims ................................ [[32mSUCCESS 1[0m in 2.61s]
+[0m17:06:43.004575 [debug] [Thread-1 (]: Finished running node model.ins_dbt.stg_claims
+[0m17:06:43.004575 [debug] [Thread-1 (]: Began running node model.ins_dbt.claims_summary
+[0m17:06:43.004575 [info ] [Thread-1 (]: 2 of 2 START sql view model RAW.claims_summary ................................. [RUN]
+[0m17:06:43.012577 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ins_dbt.stg_claims, now model.ins_dbt.claims_summary)
+[0m17:06:43.012577 [debug] [Thread-1 (]: Began compiling node model.ins_dbt.claims_summary
+[0m17:06:43.020606 [debug] [Thread-1 (]: Writing injected SQL for node "model.ins_dbt.claims_summary"
+[0m17:06:43.020606 [debug] [Thread-1 (]: Began executing node model.ins_dbt.claims_summary
+[0m17:06:43.028877 [debug] [Thread-1 (]: Writing runtime sql for node "model.ins_dbt.claims_summary"
+[0m17:06:43.028877 [debug] [Thread-1 (]: Using snowflake connection "model.ins_dbt.claims_summary"
+[0m17:06:43.028877 [debug] [Thread-1 (]: On model.ins_dbt.claims_summary: create or replace   view INSURANCE.RAW.claims_summary
+  
+  
+  
+  
+  as (
+    select
+    date_trunc('month', claim_date) as month,
+    claim_type,
+    count(*) as claims_count,
+    sum(amount) as total_amount,
+    sum(case when is_fraud then 1 else 0 end) as fraud_count
+from INSURANCE.RAW.stg_claims
+group by 1,2
+order by 1
+  )
+/* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "ins_dbt", "target_name": "dev", "node_id": "model.ins_dbt.claims_summary"} */;
+[0m17:06:43.724113 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.689 seconds
+[0m17:06:43.732439 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61e034d7-19b7-4132-925d-04d2bc17e774', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9B2E73E0>]}
+[0m17:06:43.732439 [info ] [Thread-1 (]: 2 of 2 OK created sql view model RAW.claims_summary ............................ [[32mSUCCESS 1[0m in 0.72s]
+[0m17:06:43.740443 [debug] [Thread-1 (]: Finished running node model.ins_dbt.claims_summary
+[0m17:06:43.748456 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:06:43.748456 [debug] [MainThread]: Connection 'list_INSURANCE' was left open.
+[0m17:06:43.748456 [debug] [MainThread]: On list_INSURANCE: Close
+[0m17:06:44.957199 [debug] [MainThread]: Connection 'list_INSURANCE_RAW' was left open.
+[0m17:06:44.957199 [debug] [MainThread]: On list_INSURANCE_RAW: Close
+[0m17:06:45.722661 [debug] [MainThread]: Connection 'model.ins_dbt.claims_summary' was left open.
+[0m17:06:45.730959 [debug] [MainThread]: On model.ins_dbt.claims_summary: Close
+[0m17:06:46.423655 [info ] [MainThread]: 
+[0m17:06:46.431632 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 13.38 seconds (13.38s).
+[0m17:06:46.439656 [debug] [MainThread]: Command end result
+[0m17:06:46.513386 [debug] [MainThread]: Wrote artifact WritableManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\manifest.json
+[0m17:06:46.521392 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\semantic_manifest.json
+[0m17:06:46.537559 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\My Courses\Projects\insurance-nosql-pipeline\ins_dbt\target\run_results.json
+[0m17:06:46.537559 [info ] [MainThread]: 
+[0m17:06:46.537559 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:06:46.537559 [info ] [MainThread]: 
+[0m17:06:46.537559 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m17:06:46.545557 [debug] [MainThread]: Command `dbt run` succeeded at 17:06:46.545557 after 41.61 seconds
+[0m17:06:46.545557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8F31FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F90C3A750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F9746DA60>]}
+[0m17:06:46.545557 [debug] [MainThread]: Flushing usage events
+[0m17:06:48.457069 [debug] [MainThread]: An error was encountered while trying to flush usage events
